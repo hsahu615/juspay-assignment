@@ -1,0 +1,35 @@
+.left-panel-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.fav-container {
+    width: 80%;
+}
+
+.fav-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fav-list > ul {
+    list-style: none;
+}
+
+.fav-list > ul > li {
+    line-height: 2rem;
+}
+
+.fav-tabs > span {
+    cursor: pointer;
+}
+
+.custom-accordion {
+    border-radius: 10px;
+}

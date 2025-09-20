@@ -1,0 +1,12 @@
+.nav-wrapper {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-clicked-color);
+    align-items: center;
+}
+
+.left-nav {
+    display: flex !important;
+    align-items: center !important;
+}

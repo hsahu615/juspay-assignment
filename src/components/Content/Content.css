@@ -1,0 +1,40 @@
+.content-wrapper {
+    padding: 20px;
+}
+
+.widget-wrapper {
+    display: flex;
+}
+
+.widget-row {
+    min-height: 30vh;
+}
+
+.summary-card {
+    height: 15vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.summary-card-value {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+.summary-card-percentage {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.summary-card-header {
+    font-weight: 600;
+}
+
+.product-table-row { 
+    height: 3rem;
+}
