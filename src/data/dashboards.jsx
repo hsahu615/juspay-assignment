@@ -10,7 +10,7 @@ const dashboards = [
       'content': 'Himanshu',
       'expandeable': false,
       'icon' : <PieChartIcon/ >,
-      'selected': true
+      'selected': false
     },
     {
       'id': 'panel2',
@@ -18,7 +18,7 @@ const dashboards = [
       'content': 'ascas' ,
       'expandeable': true,
       'icon' : <ShoppingBagIcon/ >,
-      'selected': false
+      'selected': true
     },
     {
       'id': 'panel3',

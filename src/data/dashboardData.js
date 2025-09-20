@@ -54,16 +54,16 @@ const dashboardData = {
     },
     revenueByLocation: [{
       city: 'New York',
-      revenue: 72000
+      revenue: 72
     }, {
       city: 'San Francisco',
-      revenue: 39000
+      revenue: 39
     }, {
       city: 'Sydney',
-      revenue: 25000
+      revenue: 25
     }, {
       city: 'Singapore',
-      revenue: 61000
+      revenue: 61
     }],
   
     topSellingProducts: [{
@@ -94,7 +94,7 @@ const dashboardData = {
     }],
     totalSales: {
       mainPercentage: 38.6,
-      breakdown: [{
+      datasets: [{
         source: 'Direct',
         value: 300.56,
         color: '#00C49F'

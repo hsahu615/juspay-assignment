@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import React, { useEffect } from 'react'
+import React from 'react'
 import {
     Chart as ChartJS,
     LinearScale,
@@ -62,7 +62,7 @@ const BarChart = () => {
     };
 
   return (
-    <Bar options={options} data={data} style={{height: '100%'}} height={'200'}/>
+    <Bar options={options} data={data} style={{height: '100%'}}/>
   )
 }
 

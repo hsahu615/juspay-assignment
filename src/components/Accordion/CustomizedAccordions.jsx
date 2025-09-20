@@ -37,12 +37,8 @@ const AccordionSummary = styled((props) => (
   }),
 }));
 
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
-}));
-
 export default function CustomizedAccordions(props) {
-  const [expanded, setExpanded] = React.useState('panel1');
+  const [expanded, setExpanded] = React.useState('panel2');
   const [data, setData] = React.useState(props.data)
 
   const handleChange = (panel) => (event, newExpanded) => {

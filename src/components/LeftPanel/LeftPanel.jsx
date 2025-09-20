@@ -33,7 +33,6 @@ const LeftPanel = () => {
 
       <div className='dash-container'>
         <p style={{color: "var(--grey-text-active-color)"}} className='my-2'>Dashboards</p>
-
       <CustomizedAccordions data={dashboards}/>
       </div>
 
