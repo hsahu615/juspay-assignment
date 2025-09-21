@@ -21,8 +21,8 @@ const Content = () => {
               key={idx}
               className="summary-card"
               style={{
-                backgroundColor: `rgba(0, 0, 235, ${Math.abs(
-                  dashboardData.summaryStats[data].change / 100
+                backgroundColor: `rgba(135, 206, 235, ${Math.abs(
+                  dashboardData.summaryStats[data].change / 50
                 )})`
               }}
             >

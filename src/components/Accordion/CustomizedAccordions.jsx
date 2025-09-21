@@ -6,6 +6,7 @@ import MuiAccordionSummary, {
   accordionSummaryClasses,
 } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import { Link } from 'react-router-dom';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -55,7 +56,8 @@ export default function CustomizedAccordions(props) {
 
   return (
     <div>
-      {data.map((acc) => <Accordion
+      {data.map((acc) => <Link to={acc.path} style={{textDecoration: 'none'}}>
+      <Accordion
           style={{backgroundColor: acc.selected==true ? "var(--grey-clicked-color)" : 'unset', borderLeft: acc.selected==true ? '3px solid black' : 'none', borderTop: 'none', borderBottom: 'none', borderRight: 'none'}} 
           className='custom-accordion' 
           expanded={expanded === acc.id} 
@@ -66,7 +68,7 @@ export default function CustomizedAccordions(props) {
           <div className='d-flex align-items-center'><span className='me-1' style={{color: "var(--grey-text-active-color)"}}>{acc.icon}</span><span>{acc.heading}</span></div>
         </AccordionSummary>
 
-      </Accordion>)}
+      </Accordion></Link>)}
     </div>
   );
 }

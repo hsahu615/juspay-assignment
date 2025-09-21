@@ -20,7 +20,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShortcut = (e) => {
-      console.log(e)
       if ((e.ctrlKey || e.metaKey) && e.key === "/") {
         e.preventDefault();
         inputRef.current?.focus();
@@ -50,7 +49,7 @@ const Navbar = () => {
         <span>
           <Paper
           component="form"
-          sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 200, backgroundColor: 'var(--grey-clicked-color)', boxShadow: 'none', borderRadius: '15px' }}
+          sx={{ p: '2px 8px', display: 'flex', alignItems: 'center', width: 200, backgroundColor: 'var(--grey-clicked-color)', boxShadow: 'none', borderRadius: '15px' }}
         >
             <SearchIcon sx={{color: 'var(--grey-text-inactive-color)'}} />
             <InputBase

@@ -6,19 +6,21 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 const dashboards = [
     {
       'id': 'panel1',
-      'heading': 'Default',
+      'heading': 'eCommerce',
       'content': 'Himanshu',
       'expandeable': false,
       'icon' : <PieChartIcon/ >,
-      'selected': false
+      'selected': true,
+      'path': '/'
     },
     {
       'id': 'panel2',
-      'heading': 'eCommerce',
+      'heading': 'Orders',
       'content': 'ascas' ,
       'expandeable': true,
       'icon' : <ShoppingBagIcon/ >,
-      'selected': true
+      'selected': false,
+      'path': '/orders'
     },
     {
       'id': 'panel3',
@@ -26,7 +28,8 @@ const dashboards = [
       'content': 'ProjectABC' ,
       'expandeable': true,
       'icon' : <FolderIcon/ >,
-      'selected': false
+      'selected': false,
+      'path': '/projects'
     },
     {
       'id': 'panel4',
@@ -34,7 +37,8 @@ const dashboards = [
       'content': 'CourseABC' ,
       'expandeable': true,
       'icon' : <MenuBookIcon/ >,
-      'selected': false
+      'selected': false,
+      'path': '/courses'
     }
 ]
 

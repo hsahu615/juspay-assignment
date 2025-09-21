@@ -5,6 +5,8 @@ import Content from '../components/Content/Content'
 import RightPanel from '../components/RightPanel/RightPanel'
 import './Home.css'
 import { useSelector } from 'react-redux'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Order from '../components/Orders/Order'
 
 const Home = () => {
   const leftPanel = useSelector((state) => state.leftPanel)
@@ -17,7 +19,14 @@ const Home = () => {
       </div>
       <div className='center-panel w-100'>
         <Navbar/>
-        <Content/>
+        <div>
+            <Routes>
+              <Route path='/' element={<Content />} />
+              <Route path='/orders' element={<Order />} />
+              <Route path='/projects' element={<Content />} />
+              <Route path='/courses' element={<Content />} />
+            </Routes>
+        </div>
       </div>
       <div className={`right-panel ${rightPanel.isCollapsed ? 'collapsed': ''}`}>
         <RightPanel/>
