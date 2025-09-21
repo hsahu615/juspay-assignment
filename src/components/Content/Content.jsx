@@ -29,12 +29,12 @@ const Content = () => {
             >
               <p className="m-0 summary-card-header" style={{color: isDark ? 'white': 'black'}}>{data}</p>
               <p className="m-0 text-end summary-card-percentage"style={{color: isDark ? 'white': 'black'}}>
-                {dashboardData.summaryStats[data].change}%
+                {dashboardData.summaryStats[data].change > 0 ? '+' : ''}{dashboardData.summaryStats[data].change}%
                 <span className="ms-2" style={{color: isDark ? 'white': 'black'}}>
                   {dashboardData.summaryStats[data].change < 0 ? <TrendingDownIcon /> : <TrendingUpIcon />}
                 </span>
               </p>
-              <p className="m-0 summary-card-value" style={{color: isDark ? 'white': 'black'}}>{dashboardData.summaryStats[data].value}</p>
+              <h4 className="m-0 summary-card-value" style={{color: isDark ? 'white': 'black'}}>${dashboardData.summaryStats[data].value}</h4>
             </div>
           )}
         </div>
