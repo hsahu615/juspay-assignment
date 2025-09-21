@@ -5,6 +5,9 @@
     --grey-text-active-color: rgba(0, 0, 0, 0.4);
     --grey-text-inactive-color: rgba(0, 0, 0, 0.2);
     --grey-clicked-color: rgba(0, 0, 0, 0.06);
+    --bg-dark: #1C1C1C;
+    --bg-dark-charts: rgba(70,70,70, 0.3) 
+    
 }
   
 

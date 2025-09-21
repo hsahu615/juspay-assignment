@@ -11,9 +11,10 @@ import Order from '../components/Orders/Order'
 const Home = () => {
   const leftPanel = useSelector((state) => state.leftPanel)
   const rightPanel = useSelector((state) => state.rightPanel)
+  const isDark = useSelector(state => state.theme.dark)
   
   return (
-    <div className='home-wrapper'>
+    <div className='home-wrapper' style={{backgroundColor: isDark ? 'var(--bg-dark)': 'white'}}>
       <div className={`left-panel ${leftPanel.isCollapsed ? 'collapsed': ''}`}>
         <LeftPanel/>
       </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import KeyboardCommandKeyIcon from '@mui/icons-material/KeyboardCommandKey';
 import IconButton from '@mui/material/IconButton';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import SwapVertIcon from '@mui/icons-material/SwapVert';
@@ -20,6 +19,7 @@ const Order = () => {
     const [filteredData, setFilteredData] = useState(orders);
     const [displayedData, setDisplayedData] = useState([]);
     const itemsPerPage = 10;
+    const isDark = useSelector(state => state.theme.dark)
 
     useEffect(() => {
         if(searchText.length === 0) {
@@ -44,19 +44,19 @@ const Order = () => {
 
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   return (
-    <div className="content-wrapper">
-      <h6>Orders</h6>
+    <div className="content-wrapper" style={{'color': isDark ? 'white': 'black'}}>
+      <h6 style={{'color': isDark ? 'white': 'black'}}>Orders</h6>
       <div className='my-3 p-3 rounded d-flex justify-content-between' style={{backgroundColor: 'var(--grey-clicked-color)'}}>
         <div>
             <span>
-                <IconButton aria-label="directions">
-                    <span style={{color: 'var(--grey-text-active-color)'}}><AddIcon sx={{color: 'var(--grey-text-active-color)'}} /></span>
+                <IconButton aria-label="directions" sx={{'color': isDark ? 'white': 'grey'}}>
+                    <span ><AddIcon /></span>
                 </IconButton>
-                <IconButton aria-label="directions">
-                    <span style={{color: 'var(--grey-text-active-color)'}}><FilterListIcon sx={{color: 'var(--grey-text-active-color)'}} /></span>
+                <IconButton aria-label="directions" sx={{'color': isDark ? 'white': 'grey'}}>
+                    <span ><FilterListIcon /></span>
                 </IconButton>
-                <IconButton aria-label="directions">
-                    <span style={{color: 'var(--grey-text-active-color)'}}><SwapVertIcon sx={{color: 'var(--grey-text-active-color)'}} /></span>
+                <IconButton aria-label="directions" sx={{'color': isDark ? 'white': 'grey'}}>
+                    <span ><SwapVertIcon /></span>
                 </IconButton>
             </span>
         </div>
@@ -77,7 +77,7 @@ const Order = () => {
 
       <div className="order-table">
           <table className="product-selling-table w-100">
-            <thead>
+            <thead style={{color: isDark ? 'lightgray' : 'grey', borderBottom: '1px solid lightgrey'}}>
               <tr className="order-table-header-row">
                 <th>Order ID</th>
                 <th>User</th>
@@ -107,6 +107,8 @@ const Order = () => {
               onChange={handleChange} 
               hidePrevButton={true} 
               hideNextButton={displayedData.length===0}
+              className={isDark ? 'dark-pagination': ''}
+              color={isDark ? 'secondary' : 'standard'}
             />
           </div>
         </div>

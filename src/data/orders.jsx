@@ -49,7 +49,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9801",
@@ -99,7 +99,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -129,7 +129,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -159,7 +159,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -189,7 +189,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -219,7 +219,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -249,7 +249,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -279,7 +279,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -309,7 +309,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -339,7 +339,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -369,7 +369,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -399,7 +399,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -429,7 +429,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -459,7 +459,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -489,7 +489,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -519,7 +519,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -549,7 +549,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -579,7 +579,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -609,7 +609,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     },
     {
       "Order ID": "#CM9803",
@@ -639,7 +639,7 @@ const orders = [
       "Address": "Nest Lane Olivette",
       "Date": "Feb 2, 2023",
       "Status": "Rejected",
-      "Color": "#1C1C1C66"
+      "Color": "grey"
     }
   ]
   

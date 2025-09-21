@@ -7,6 +7,7 @@ import MuiAccordionSummary, {
 } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -41,6 +42,7 @@ const AccordionSummary = styled((props) => (
 export default function CustomizedAccordions(props) {
   const [expanded, setExpanded] = React.useState('panel2');
   const [data, setData] = React.useState(props.data)
+  const isDark = useSelector(state => state.theme.dark)
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -58,14 +60,14 @@ export default function CustomizedAccordions(props) {
     <div>
       {data.map((acc) => <Link to={acc.path} style={{textDecoration: 'none'}}>
       <Accordion
-          style={{backgroundColor: acc.selected==true ? "var(--grey-clicked-color)" : 'unset', borderLeft: acc.selected==true ? '3px solid black' : 'none', borderTop: 'none', borderBottom: 'none', borderRight: 'none'}} 
+          style={{backgroundColor: acc.selected==true ? isDark ? "grey" : "var(--grey-clicked-color)" : 'unset', borderLeft: acc.selected==true ? isDark ? '3px solid white' : '3px solid black' : 'none', borderTop: 'none', borderBottom: 'none', borderRight: 'none'}} 
           className='custom-accordion' 
           expanded={expanded === acc.id} 
           onChange={handleChange(acc.id)}
           onClick={() => handleNavigate(acc.id)}
         >
         <AccordionSummary className='ps-2'  aria-controls="panel1d-content" id={acc.id + "-header"} expandeable={acc.expandeable}>
-          <div className='d-flex align-items-center'><span className='me-1' style={{color: "var(--grey-text-active-color)"}}>{acc.icon}</span><span>{acc.heading}</span></div>
+          <div className='d-flex align-items-center'><span className='me-1' style={{color: isDark ? 'white' : "grey"}}>{acc.icon}</span><span style={{color: isDark ? 'white' : "grey"}}>{acc.heading}</span></div>
         </AccordionSummary>
 
       </Accordion></Link>)}

@@ -27,35 +27,30 @@
   
   .chart-card {
     grid-column: span 2;
-    background-color: var(--grey-clicked-color);
     border-radius: 12px;
     padding: 1rem;
   }
   
   .line-chart-card {
     grid-column: span 3;
-    background-color: var(--grey-clicked-color);
     border-radius: 12px;
     padding: 1rem;
   }
 
   .map-chart-card {
     grid-column: span 1;
-    background-color: var(--grey-clicked-color);
     border-radius: 12px;
     padding: 1rem;
   }
 
   .table-card {
       grid-column: span 3;
-      background-color: var(--grey-clicked-color);
       border-radius: 12px;
       padding: 1rem;
 }
     
     .donut-chart-card {
       grid-column: span 1;
-      background-color: var(--grey-clicked-color);
       border-radius: 12px;
       padding: 1rem;
     }
@@ -64,8 +59,4 @@
     height: 30px;
     overflow-y: scroll;
     
-  }
-  
-  .table-card th {
-    color: var(--grey-text-active-color);
   }

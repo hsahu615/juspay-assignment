@@ -4,10 +4,6 @@
     padding: 1rem;
 }
 
-.order-table-header-row {
-    border-bottom: 2px solid var(--grey-text-inactive-color);
-}
-
 .order-table td {
     font-family: Inter;
     font-weight: 400;
@@ -23,7 +19,6 @@
 }
 
 .order-table-row {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     height: 5vh;
 }
 
@@ -32,5 +27,9 @@
 }
 
 .order-table th {
-  color: var(--grey-text-active-color);
+  height: 4vh;
+}
+
+.dark-pagination > ul > li > button {
+    color: white;
 }
