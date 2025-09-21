@@ -1,6 +1,6 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 import React, { useEffect } from 'react'
-import { Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
   LinearScale,
@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
   PointElement,
-} from 'chart.js';
+} from 'chart.js'
 
 ChartJS.register(
   CategoryScale,
@@ -20,25 +20,25 @@ ChartJS.register(
   Tooltip,
   Legend,
   PointElement
-);  
+)
 
 
 
 const LineChart = () => {
-    const { currentWeekTotal, previousWeekTotal, labels, datasets } = useSelector((state) => state.centerPanel.dashboardData.revenueTrend);
+  const { currentWeekTotal, previousWeekTotal, labels, datasets } = useSelector((state) => state.centerPanel.dashboardData.revenueTrend)
 
-    const options = {
-      interaction: {
-        intersect: true,
-      },
+  const options = {
+    interaction: {
+      intersect: true
+    },
     plugins: {
-        legend: {
+      legend: {
         display: false
-        },
-        title: {
-          display: true,
-          text: `Revenue | Current Week: ${currentWeekTotal} | Previous Week: ${previousWeekTotal}`
-        },
+      },
+      title: {
+        display: true,
+        text: `Revenue | Current Week: ${currentWeekTotal} | Previous Week: ${previousWeekTotal}`
+      }
     },
     responsive: true,
     elements: {
@@ -47,28 +47,28 @@ const LineChart = () => {
       }
     },
     scales: {
-        x: {
+      x: {
         stacked: true,
         grid: {
-            display: false
+          display: false
         }
-        },
-        y: {
+      },
+      y: {
         stacked: true,
         ticks: {
-            stepSize: 20,
-            callback: function(value, index, ticks) {
-            return value + 'M';
-            },
+          stepSize: 20,
+          callback: function(value, index, ticks) {
+            return value + 'M'
+          }
         }
-        },
-    },
-    };
+      }
+    }
+  }
 
-    const data = {
+  const data = {
     labels,
     datasets: datasets ? datasets : []
-    };
+  }
 
   return (
     <div className='w-100'><Line options={options} data={data} style={{height: '100%'}}/></div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import './Content.css'
 import { useSelector } from 'react-redux'
-import TrendingDownIcon from '@mui/icons-material/TrendingDown';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import BarChart from '../BarChart/BarChart';
-import LineChart from '../LineChart/LineChart';
-import DonutChart from '../DonutChart/DonutChart';
+import TrendingDownIcon from '@mui/icons-material/TrendingDown'
+import TrendingUpIcon from '@mui/icons-material/TrendingUp'
+import BarChart from '../BarChart/BarChart'
+import LineChart from '../LineChart/LineChart'
+import DonutChart from '../DonutChart/DonutChart'
 
 const Content = () => {
   const { dashboardData } = useSelector((state) => state.centerPanel)
@@ -28,7 +28,7 @@ const Content = () => {
               }}
             >
               <p className="m-0 summary-card-header" style={{color: isDark ? 'white': 'black'}}>{data}</p>
-              <p className="m-0 text-end summary-card-percentage"style={{color: isDark ? 'white': 'black'}}>
+              <p className="m-0 text-end summary-card-percentage" style={{color: isDark ? 'white': 'black'}}>
                 {dashboardData.summaryStats[data].change > 0 ? '+' : ''}{dashboardData.summaryStats[data].change}%
                 <span className="ms-2" style={{color: isDark ? 'white': 'black'}}>
                   {dashboardData.summaryStats[data].change < 0 ? <TrendingDownIcon /> : <TrendingUpIcon />}
@@ -49,18 +49,16 @@ const Content = () => {
 
         <div className="map-chart-card" style={{backgroundColor: isDark ? 'var(--bg-dark-charts)': 'var(--grey-clicked-color)'}}>
           <p style={{color: isDark ? 'grey' : 'var(--grey-text-active-color)'}} className='text-center'>Revenue by Location</p>
-          {dashboardData.revenueByLocation.map((loc) => <div>
+          {dashboardData.revenueByLocation.map((loc) => <div key={loc.city}>
             <div className='d-flex justify-content-between mx-0 my-3' style={{color: isDark ? 'grey' : 'var(--grey-text-active-color)'}}>
               <p className='m-0' style={{color: isDark ? 'grey' : 'var(--grey-text-active-color)'}}>{loc.city}</p>
               <p className='m-0' style={{color: isDark ? 'grey' : 'var(--grey-text-active-color)'}}>{loc.revenue}K</p>
             </div>
             <div className='progress-bar-fill w-100' style={{backgroundColor: 'rgba(191, 215, 223, 0.93)'}}>
               <div className='progress-bar-fill' style={{height: '2px', width: `${loc.revenue}%`, backgroundColor: 'rgb(57, 153, 221)'}}></div>
-            </ div>
+            </div>
           </div>)}
         </div>
-
-      
 
         <div className="table-card" style={{backgroundColor: isDark ? 'var(--bg-dark-charts)': 'var(--grey-clicked-color)'}}>
           <p style={{color: isDark ? 'grey' : 'var(--grey-text-active-color)'}} className='text-center'>Top Selling Products</p>

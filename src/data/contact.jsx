@@ -1,4 +1,4 @@
-import profileImage from '../assets/images/profile-female.png';
+import profileImage from '../assets/images/profile-female.png'
 
 const contacts = [
     {

@@ -1,6 +1,6 @@
-import PestControlIcon from '@mui/icons-material/PestControl';
-import PersonIcon from '@mui/icons-material/Person';
-import WifiIcon from '@mui/icons-material/Wifi';
+import PestControlIcon from '@mui/icons-material/PestControl'
+import PersonIcon from '@mui/icons-material/Person'
+import WifiIcon from '@mui/icons-material/Wifi'
 
 const notifications = [
     {

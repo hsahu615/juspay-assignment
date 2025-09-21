@@ -1,4 +1,4 @@
-import profileImage from '../assets/images/profile-right-panel.png';
+import profileImage from '../assets/images/profile-right-panel.png'
 
 const activities = [
     {

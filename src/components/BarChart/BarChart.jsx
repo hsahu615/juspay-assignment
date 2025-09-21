@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 import React from 'react'
 import {
     Chart as ChartJS,
@@ -9,8 +9,8 @@ import {
     Tooltip,
     Legend,
     PointElement,
-  } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+  } from 'chart.js'
+import { Bar } from 'react-chartjs-2'
 
 ChartJS.register(
     CategoryScale,
@@ -20,46 +20,46 @@ ChartJS.register(
     Tooltip,
     Legend,
     PointElement
-  );  
+  )
 
 
 const BarChart = () => {
-    const { labels, datasets } = useSelector((state) => state.centerPanel.dashboardData.projectionsVsActuals);
+  const { labels, datasets } = useSelector((state) => state.centerPanel.dashboardData.projectionsVsActuals)
 
-    const options = {
+  const options = {
     plugins: {
-        legend: {
+      legend: {
         display: false
-        },
-        title: {
+      },
+      title: {
         display: true,
-        text: 'Projections vs Actuals',
-        },
+        text: 'Projections vs Actuals'
+      }
     },
     responsive: true,
     scales: {
-        x: {
+      x: {
         stacked: true,
         grid: {
-            display: false
+          display: false
         }
-        },
-        y: {
+      },
+      y: {
         stacked: true,
         ticks: {
-            stepSize: 20,
-            callback: function(value, index, ticks) {
-            return value + 'M';
-            },
+          stepSize: 20,
+          callback: function(value, index, ticks) {
+            return value + 'M'
+          }
         }
-        },
-    },
-    };
+      }
+    }
+  }
 
-    const data = {
+  const data = {
     labels,
     datasets: datasets ? datasets : []
-    };
+  }
 
   return (
     <Bar options={options} data={data} style={{height: '100%'}}/>
